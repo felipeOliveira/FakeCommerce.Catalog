@@ -1,0 +1,72 @@
+SADD cat feminino calcados
+SADD cat:feminino:subcat roupa-feminina
+SADD cat:feminino:subcat setores
+SADD cat:feminino:subcat:roupa-feminina blusas blusas-basicas bermudas calcas camisas cardigans-e-sueteres casacos-e-jaquetas moletom coletes saias shorts macacao vestidos
+SADD cat:femino:subcat:setores moda-casual moda-fitness moda-praia moda-jovem moda-social moda-gestante
+SADD cat:calcados:subcat feminino masculino menina menino sandalia chinelo tenis rasteirinha tamanco mule scarpin peep-toe sapatilha bota
+SADD cat:calcados:subcat:masculino bota chinelo sandalia sapatenis tenis tenis-esportivo sapato-social
+SADD cat:calcados:subcat:menina bota chinelo sandalia sapatilha tenis bota chinelo papete sandalia sapatenis tenis
+SADD cat:feminino:prods 10036237159 10038625756 10039340269
+SADD cat:feminino:subcat:roupa-feminina:prods 10036237159 10038625756 10039340269
+SADD cat:feminino:subcat:roupa-feminina:subcat:blusas:prods 10036237159 10038625756 10039340269
+
+SET cat:feminino Feminino
+SET cat:calcados Calçados
+SET cat:roupa-feminina "Roupa Feminina"
+SET cat:setores setores
+SET cat:masculino Masculino
+SET cat:menina menina
+SET cat:menino Menino
+SET cat:blusas Blusas
+SET cat:blusas-basicas "Blusas Básicas"
+SET cat:bermudas Bermudas
+SET cat: calcas Calças
+SET cat: camisas Camisas
+SET cat: cardigans-e-sueteres "Cardigans e Suéteres"
+SET cat: casacos-e-jaquetas "Casacos e Jaquetas"
+SET cat: moletom Moletom
+SET cat: coletes Coletes
+SET cat: saias Saias
+SET cat: shorts Shorts
+SET cat: macacao Macacão
+SET cat: vestidos Vestidos
+SET cat: moda-casual "Moda Casual"
+SET cat: moda-fitness "Moda Fitness"
+SET cat: moda-praia "Moda Praia"
+SET cat: moda-jovem "Moda Jovem"
+SET cat: moda-social "Moda Social"
+SET cat: moda-gestante "Moda Gestante"
+SET cat: sandalia Sandália
+SET cat: chinelo Chinelo
+SET cat: tenis Tênis
+SET cat: rasteirinha Rasteirinha
+SET cat: tamanco Tamanco
+SET cat: mule Mule
+SET cat: scarpin Scarpin
+SET cat: peep-toe "Peep Toe"
+SET cat: sapatilha Sapatilha
+SET cat: bota Bota
+SET cat: sapatenis Sapatênis
+SET cat: tenis-esportivo "Tênis Esportivo"
+SET cat: sapato-social "Sapato Social"
+SET cat: papete Papete
+
+HMSET prod:10036237159 Name "Blusa Feminina Estampa Floral Manga 3/4" Description "Blusa Feminina Estampa Floral Manga 3/4 Marisa\n Blusa feminina confeccionada em tecido viscose. Possui estampa floral, recote V, fechamento por botão, manga 3/4 com babado, tira mara amarração, acabamento e costura no tom." Price 69.95
+HMSET prod:10036237159:features Tamanho "36 ao 46" Material crepe "Detalhes adicionais" "estampa floral, manga 3/4"
+SADD prod:10036237159:colors Amarelo
+SADD prod:10036237159:sizes 36
+SADD prod:10036237159:sizes 38
+SADD prod:10036237159:sizes 40
+SADD prod:10036237159:sizes 42
+SADD prod:10036237159:sizes 44
+SADD prod:10036237159:sizes 46
+
+HMSET prod:10038625756 Name "Blusa Feminina Amarração Sem Manga" Description "Blusa Feminina Amarração Sem Manga\nBlusa feminina confeccionada em tecido malha. Possui redondo com detalhe de tiras para amarração, sem manga, acabamento e costura no tom.\nDica: Podendo ser utilizada desde o verão até o outono, a regata é uma peça extremamente versátil, tendo inúmeras possibilidades de estampas, cores, tecidos, acabamentos e tipos. Componha seu look com qualquer tipo de saia ou shorts e rasteiras que você ficará a cara do verão. Caso esteja procurando por algo mais social, é possível combinar a regata com blazer, calça jeans e salto alto (sandália de tiras ou scarpin) e você está pronta para a reunião de trabalho! Para algo mais ousado, sobreponha sua regata de alças finas em cima de uma t-shirt branca e você terá um look super estiloso. As possibilidades de combinações são infinitas!" Price 69.95
+HMSET prod:10038625756:features Tamanho "P ao GG" Modelo "Blusa Feminina Amarração Sem Manga Chópp"  Material "malha" "Detalhes adicionais" "casual, tendencia, amarração" Marca Chópp
+SADD prod:10038625756:colors Azul
+SADD prod:10039340269:sizes P M G GG
+
+HMSET prod:10039340269 Name "Blusa Feminina Listrada High Neck Sem Manga" Description "O que é High Neck?\nA tendência que fez sucesso no passado está de volta. E desta vez voltou com tudo, acrescentando um toque de modernidade. O modelo high-neck  cobre a maior parte do colo, combina com todos os tipos de corpo: para as magrinhas, as mais cheinhas, para as mulheres com muito busto e para aquelas com pouco.\n\nDICA:\nÉ muito provável que você tenha ao menos uma blusa regata em seu armário. A peça é útil e fácil de combinar. Vai bem com calça jeans, com uma saia mais encorpada, com shorts, com blazer e com qualquer outro tipo de combinação que desejar. Na maioria das vezes, a regata surge como um complemento do look e não o elemento principal dele e pode marcar presença em vários ambientes, o segredo está nas outras peças que irão compor o look, sejam mais informais, despojadas ou sociais." Price 49.99
+HMSET prod:10039340269:features Tamanho	"P ao GG" Modelo "Blusa Feminina Listrada High Neck Sem Manga Lecimar" Material canelado "Detalhes adicionais" "listras, sem manga, amarração" Marca Lecimar
+SADD prod:10039340269:colors Azul Verde Bege
+SADD prod:10039340269:sizes P M G GG
